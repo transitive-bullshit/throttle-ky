@@ -44,7 +44,7 @@ const rateLimitedKy = throttleKy(ky, throttle)
 const result = await rateLimitedKy.get('https://example.com').text()
 ```
 
-This package is very simple, but I find myself using it all the time for making more robust HTTP requests, especially when used alongside other [async primitives](https://github.com/sindresorhus/promise-fun) like [p-map](https://github.com/sindresorhus/p-map) or when creating HTTP API clients which are configurable via `ky.extend` and also respect server-side rate limits.
+This package is very simple, but I find myself using it all the time for making more robust HTTP requests, especially when used alongside other [async primitives](https://github.com/sindresorhus/promise-fun) like [p-map](https://github.com/sindresorhus/p-map) or when creating HTTP API clients which are configurable via `ky.extend` while also respecting server-side rate limits.
 
 ## License
 
