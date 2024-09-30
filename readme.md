@@ -18,8 +18,6 @@
 
 Very useful for enforcing rate-limits. Intended to be used with [ky](https://github.com/sindresorhus/ky) (an excellent [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) wrapper) and [p-throttle](https://github.com/sindresorhus/p-throttle), though `p-throttle` can be swapped for any rate-limiting implementation.
 
-This package is very simple, but I find myself using it all the time for making more robust HTTP requests, especially when used alongside other [async primitives](https://github.com/sindresorhus/promise-fun) like [p-map](https://github.com/sindresorhus/p-map) or when creating HTTP API clients which are configurable via `ky.extend` and also respect server-side rate limits.
-
 ## Install
 
 ```bash
@@ -45,6 +43,8 @@ const rateLimitedKy = throttleKy(ky, throttle)
 // the given throttle before making new HTTP requests.
 const result = await rateLimitedKy.get('https://example.com').text()
 ```
+
+This package is very simple, but I find myself using it all the time for making more robust HTTP requests, especially when used alongside other [async primitives](https://github.com/sindresorhus/promise-fun) like [p-map](https://github.com/sindresorhus/p-map) or when creating HTTP API clients which are configurable via `ky.extend` and also respect server-side rate limits.
 
 ## License
 
