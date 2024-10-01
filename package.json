@@ -1,6 +1,6 @@
 {
   "name": "throttle-ky",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Throttles HTTP requests made by a ky instance. Useful for enforcing rate-limits.",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
   "license": "MIT",
