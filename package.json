@@ -35,8 +35,7 @@
     "test:format": "prettier --check \"**/*.{js,ts,tsx}\"",
     "test:lint": "eslint .",
     "test:typecheck": "tsc --noEmit",
-    "test:unit": "vitest run",
-    "preinstall": "npx only-allow pnpm"
+    "test:unit": "vitest run"
   },
   "peerDependencies": {
     "ky": "^1.7.2"
@@ -49,7 +48,6 @@
     "eslint": "^8.57.0",
     "ky": "^1.7.2",
     "npm-run-all2": "^6.2.2",
-    "only-allow": "^1.2.1",
     "p-throttle": "^6.2.0",
     "prettier": "^3.3.3",
     "tsup": "^8.2.4",
